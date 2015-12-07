@@ -115,7 +115,8 @@ namespace SimpleBlog.Areas.Admin.Controllers
             return RedirectToAction("index");
         }
 
-        [HttpPost]
+        // Commenting out because it didn't work for some reason with HttpPost
+        //[HttpPost]
         public ActionResult Delete(int id)
         {
             var user = Database.Session.Load<User>(id);
